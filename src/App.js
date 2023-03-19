@@ -1,6 +1,7 @@
 
 
 import Expenses from './components/Expenses';
+import NewExpense from './components/NewExpense';
 import './index.css';
 
 function App() {
@@ -27,8 +28,16 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = expense =>{
+
+    console.log("in App js")
+    console.log(expense)
+
+  }
+
   return (
     <div>
+      <NewExpense onAddExpress ={addExpenseHandler}/>
       <Expenses item = {expenses}/>
     </div>
   );
