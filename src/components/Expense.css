@@ -6,3 +6,11 @@
     max-width: 95%;
   
   }
+
+  .notFound{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+  }
